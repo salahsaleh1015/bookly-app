@@ -13,3 +13,10 @@ presentation layer, domain layer, data layer
  but domain layer is the entry point of the application
  because it is tell us how the application will work
 */
+
+
+/* 3.  the difference between models and entities in clean architecture
+/*
+the models are responsible for mapping the json data to dart classes and vice versa
+the entities are responsible for presenting the data to the user ( data representation )
+*/
