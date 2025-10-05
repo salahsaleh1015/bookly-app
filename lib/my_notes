@@ -1,0 +1,15 @@
+
+
+
+// important notes
+
+/* 1.  clean architecture is a layered architecture
+each layer has its own responsibility & communicate with other layers
+*/
+
+
+/* 2.  clean architecture is a consists of 3 layers
+presentation layer, domain layer, data layer
+ but domain layer is the entry point of the application
+ because it is tell us how the application will work
+*/
