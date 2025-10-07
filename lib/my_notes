@@ -20,3 +20,12 @@ presentation layer, domain layer, data layer
 the models are responsible for mapping the json data to dart classes and vice versa
 the entities are responsible for presenting the data to the user ( data representation )
 */
+
+
+/* Data Layer
+
+1- models are the entry point in this layer
+2- models are responsible for mapping the json data to dart classes and vice versa
+3- models will be changed t entities in the domain layer Using OOP principle ( Inheritance )
+
+*/
