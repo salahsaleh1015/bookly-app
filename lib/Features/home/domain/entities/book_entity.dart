@@ -1,5 +1,5 @@
 class BookEntity {
-  final String id;
+  final String bookId;
   final String title;
   final String authorName;
   final String image;
@@ -7,7 +7,7 @@ class BookEntity {
   final num rate;
 
   BookEntity({
-    required this.id,
+    required this.bookId,
     required this.title,
     required this.authorName,
     required this.image,

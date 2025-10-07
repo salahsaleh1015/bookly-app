@@ -7,7 +7,7 @@ import '../../domain/entities/book_entity.dart';
 
 class BookModel extends BookEntity {
   String? kind;
-  String? bookId;
+  String? id;
   String? etag;
   String? selfLink;
   VolumeInfo? volumeInfo;
@@ -17,7 +17,7 @@ class BookModel extends BookEntity {
 
   BookModel({
     this.kind,
-    this.bookId,
+    this.id,
     this.etag,
     this.selfLink,
     this.volumeInfo,
@@ -25,7 +25,7 @@ class BookModel extends BookEntity {
     this.accessInfo,
     this.searchInfo,
   }) : super(
-         id: bookId!,
+         bookId: id!,
          image: volumeInfo?.imageLinks?.thumbnail ?? '',
          authorName: volumeInfo?.authors?.first ?? 'No Name',
          price: 0.0,
@@ -35,7 +35,7 @@ class BookModel extends BookEntity {
 
   factory BookModel.fromJson(Map<String, dynamic> json) => BookModel(
     kind: json['kind'] as String?,
-    bookId: json['id'] as String?,
+    id: json['id'] as String?,
     etag: json['etag'] as String?,
     selfLink: json['selfLink'] as String?,
     volumeInfo:
