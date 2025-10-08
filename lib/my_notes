@@ -21,6 +21,8 @@ the models are responsible for mapping the json data to dart classes and vice ve
 the entities are responsible for presenting the data to the user ( data representation )
 */
 
+// Domain Layer ( Entities => Repos => UseCases => Presentation Layer )
+
 
 /* Data Layer
 
