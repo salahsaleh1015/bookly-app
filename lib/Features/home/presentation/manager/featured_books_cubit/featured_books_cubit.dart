@@ -9,7 +9,7 @@ part 'featured_books_state.dart';
 
 class FeaturedBooksCubit extends Cubit<FeaturedBooksStates> {
   FeaturedBooksCubit(this.featuredBooksUseCase) : super(FeaturedBooksInitialState());
-  FetchFeaturedBooksUseCase featuredBooksUseCase;
+  final FetchFeaturedBooksUseCase featuredBooksUseCase;
 
   Future<void> fetchFeaturedBooks() async {
     emit(FeaturedBooksLoadingState());
