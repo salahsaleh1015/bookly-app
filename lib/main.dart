@@ -12,6 +12,7 @@ import 'Features/home/data/repos/home_repo_impl.dart';
 import 'Features/home/presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'constants.dart';
 import 'core/utils/app_router.dart';
+import 'core/utils/simble_bloc_observer.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -19,6 +20,7 @@ void main() async {
   await Hive.openBox<BookEntity>(kNewestBox);
   await Hive.openBox<BookEntity>(kFeaturedBox);
   serviceLocatorSetup();
+  Bloc.observer = SimpleBlocObserver();
   runApp(const Bookly());
 }
 
