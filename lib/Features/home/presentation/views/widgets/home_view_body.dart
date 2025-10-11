@@ -1,4 +1,5 @@
 
+import 'package:bookly_app/Features/home/presentation/views/widgets/featured_books_list_view_bloc_builder.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'best_seller_list_view.dart';
@@ -21,7 +22,7 @@ class HomeViewBody extends StatelessWidget {
                     horizontal: 30,
                   ),
                   child: CustomAppBar()),
-              FeaturedBooksListView(),
+              FeaturedBooksListViewBlocBuilder(),
               SizedBox(
                 height: 50,
               ),
